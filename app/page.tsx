@@ -1,44 +1,109 @@
 'use client';
-import { useState } from 'react';
 
-const designs = ['/design1.html', '/design2.html', '/design3.html'];
+import styles from './page.module.css';
 
 export default function Home() {
-  const [idx, setIdx] = useState(0);
-
   return (
-    <>
-      <iframe
-        src={designs[idx]}
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100vw',
-          height: '100vh',
-          border: 'none',
-        }}
-      />
-      <button
-        onClick={() => setIdx((idx + 1) % designs.length)}
-        style={{
-          position: 'fixed',
-          bottom: 32,
-          right: 32,
-          padding: '16px 24px',
-          background: '#111',
-          color: '#fff',
-          border: 'none',
-          borderRadius: 999,
-          cursor: 'pointer',
-          fontSize: 16,
-          fontWeight: 600,
-          zIndex: 9999,
-          boxShadow: '0 4px 24px rgba(0,0,0,0.4)',
-        }}
-      >
-        Next Design
-      </button>
-    </>
+    <div className={styles.page}>
+      <nav className={styles.nav}>
+        <div className={styles.logo}>dhandaHQ</div>
+        <div className={styles.navLinks}>
+          <a href="#">Platform</a>
+          <a href="#">Use Cases</a>
+          <a href="#">Pricing</a>
+        </div>
+      </nav>
+
+      <main className={styles.main}>
+        <section className={styles.textSection}>
+          <div className={styles.badge}>COMMAND CENTER_</div>
+          <h1 className={styles.h1}>dhandaHQ</h1>
+          <p className={styles.subhead}>Command center for your business.</p>
+
+          <div className={styles.ctaGroup}>
+            <button className={styles.btnPrimary} aria-label="Start">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4v16m0-16l-4 4m4-4l4 4" />
+              </svg>
+            </button>
+            <span className={styles.ctaText}>Get Started</span>
+          </div>
+        </section>
+
+        <section className={styles.canvasSection} aria-hidden="true">
+          <div className={styles.spatialBackdrop} />
+          <div className={styles.spatialScene}>
+            <svg className={styles.splines} viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+              <path className={styles.splineGlow} d="M160 120 C 300 120, 200 300, 300 300" />
+              <path className={styles.splinePath} d="M160 120 C 300 120, 200 300, 300 300" />
+              <path className={styles.splineGlow} d="M130 420 C 250 420, 200 300, 300 300" />
+              <path className={styles.splinePath} d="M130 420 C 250 420, 200 300, 300 300" />
+              <path className={styles.splineGlow} d="M410 150 C 350 150, 400 300, 300 300" />
+              <path className={styles.splinePath} d="M410 150 C 350 150, 400 300, 300 300" />
+              <path className={styles.splineGlow} d="M440 480 C 350 480, 400 300, 300 300" />
+              <path className={styles.splinePath} d="M440 480 C 350 480, 400 300, 300 300" />
+            </svg>
+
+            <div className={`${styles.node} ${styles.cardVideo} ${styles.node1}`} style={{ ['--tz' as any]: '34px' }}>
+              <div className={styles.cardVideoHeader}>
+                <div className={styles.avatar} />
+                <div style={{ flex: 1 }}>
+                  <div className={styles.cardTitle} />
+                  <div className={styles.cardMeta} />
+                </div>
+              </div>
+              <div className={styles.playIndicator} />
+              <div className={`${styles.metaLabel} ${styles.lbl1}`}>NODE_01</div>
+            </div>
+
+            <div className={`${styles.node} ${styles.cardVideo} ${styles.node2}`} style={{ ['--tz' as any]: '12px' }}>
+              <div className={styles.cardVideoHeader}>
+                <div className={styles.avatar} />
+                <div style={{ flex: 1 }}>
+                  <div className={styles.cardTitle} />
+                  <div className={styles.cardMeta} />
+                </div>
+              </div>
+              <div className={styles.playIndicator} />
+              <div className={`${styles.metaLabel} ${styles.lbl1}`}>NODE_02</div>
+            </div>
+
+            <div className={`${styles.node} ${styles.cardVideo} ${styles.node3}`} style={{ ['--tz' as any]: '44px' }}>
+              <div className={styles.cardVideoHeader}>
+                <div className={styles.avatar} />
+                <div style={{ flex: 1 }}>
+                  <div className={styles.cardTitle} />
+                  <div className={styles.cardMeta} />
+                </div>
+              </div>
+              <div className={styles.playIndicator} />
+              <div className={`${styles.metaLabel} ${styles.lbl1}`}>NODE_03</div>
+            </div>
+
+            <div className={`${styles.node} ${styles.cardVideo} ${styles.node4}`} style={{ ['--tz' as any]: '22px' }}>
+              <div className={styles.cardVideoHeader}>
+                <div className={styles.avatar} />
+                <div style={{ flex: 1 }}>
+                  <div className={styles.cardTitle} />
+                  <div className={styles.cardMeta} />
+                </div>
+              </div>
+              <div className={styles.playIndicator} />
+              <div className={`${styles.metaLabel} ${styles.lbl1}`}>NODE_04</div>
+            </div>
+
+            <div className={styles.nodeInsight}>
+              <div className={`${styles.metaLabel} ${styles.lbl2}`}>CORE_NODE</div>
+              <div className={styles.insightCore}>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
