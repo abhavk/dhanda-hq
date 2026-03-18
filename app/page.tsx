@@ -7,7 +7,7 @@ export default function Home() {
     <div className={styles.page}>
       <nav className={styles.nav}>
         <div className={styles.navLinks}>
-          <a href="#">Platform</a>
+          <a href="#">Tools</a>
           <a href="#">Pricing</a>
         </div>
       </nav>
