@@ -1,21 +1,24 @@
 :root {
-  --bg-deep: #141518;
-  --bg-mid: #2a2c31;
-  --bg-light: #444851;
+  --bg-deep: #07080b;
+  --bg-mid: #12141b;
+  --bg-light: #1e2230;
 
   --text-primary: #f6f7f8;
   --text-secondary: rgba(246, 247, 248, 0.62);
 
-  --glass-bg: rgba(255, 255, 255, 0.028);
-  --glass-border: rgba(255, 255, 255, 0.09);
-  --glass-highlight: rgba(255, 255, 255, 0.18);
+  --glass-bg: rgba(255, 255, 255, 0.015);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-highlight: rgba(255, 255, 255, 0.14);
 
   --metal-light: #f5f5f6;
   --metal-mid: #d5d7db;
   --metal-dark: #9ea2a8;
 
-  --shadow-ambient: 0 28px 70px rgba(0, 0, 0, 0.45);
-  --shadow-contact: 0 6px 18px rgba(0, 0, 0, 0.25);
+  --accent: #89a7ff;
+  --accent-strong: #5f86ff;
+
+  --shadow-ambient: 0 34px 90px rgba(0, 0, 0, 0.62);
+  --shadow-contact: 0 10px 24px rgba(0, 0, 0, 0.42);
 
   --radius-panel: 48px;
   --radius-card: 20px;
@@ -32,9 +35,9 @@
 
   background-color: var(--bg-deep);
   background-image:
-    radial-gradient(circle at 0% 0%, rgba(58, 60, 68, 0.8) 0%, transparent 52%),
-    radial-gradient(circle at 100% 100%, rgba(58, 60, 68, 0.55) 0%, transparent 52%),
-    linear-gradient(135deg, #141518 0%, #070708 100%);
+    radial-gradient(circle at 12% 12%, rgba(95, 134, 255, 0.16) 0%, transparent 48%),
+    radial-gradient(circle at 88% 82%, rgba(20, 24, 40, 0.9) 0%, transparent 55%),
+    linear-gradient(145deg, #07080b 0%, #040407 55%, #000 100%);
   color: var(--text-primary);
 }
 
@@ -49,15 +52,15 @@
   gap: 32px;
   padding: 12px 24px;
 
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(28px) saturate(135%);
+  background: rgba(5, 6, 10, 0.42);
+  backdrop-filter: blur(30px) saturate(120%);
   -webkit-backdrop-filter: blur(28px) saturate(135%);
 
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-pill);
   z-index: 100;
-  box-shadow: 0 10px 42px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 14px 54px rgba(0, 0, 0, 0.58);
 }
 
 .logo {
@@ -133,23 +136,29 @@
 .h1 {
   font-size: 72px;
   line-height: 1.05;
-  font-weight: 320;
+  font-weight: 480;
   letter-spacing: -0.05em;
   margin-bottom: 22px;
   color: var(--text-primary);
+
+  /* Slanted, but controlled + authoritative */
   font-style: italic;
-  transform: skewX(-12deg);
+  transform: skewX(-7deg);
   display: inline-block;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.44) 100%);
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(180, 195, 255, 0.42) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 28px rgba(255, 255, 255, 0.06);
+
+  text-shadow:
+    0 0 34px rgba(95, 134, 255, 0.12),
+    0 14px 44px rgba(0, 0, 0, 0.55);
 }
 
 .subhead {
   font-size: 20px;
   line-height: 1.5;
-  color: rgba(246, 247, 248, 0.64);
+  color: rgba(246, 247, 248, 0.72);
   font-weight: 320;
   max-width: 520px;
   margin-bottom: 48px;
@@ -232,13 +241,13 @@
 .spatialBackdrop {
   position: absolute;
   inset: 40px -40px -40px 40px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.028) 0%, rgba(0, 0, 0, 0.35) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.018) 0%, rgba(0, 0, 0, 0.55) 100%);
   border-radius: var(--radius-panel);
   border-top: 1px solid rgba(255, 255, 255, 0.07);
   border-left: 1px solid rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(44px);
   -webkit-backdrop-filter: blur(44px);
-  box-shadow: -20px -20px 60px rgba(255, 255, 255, 0.02), 44px 44px 100px rgba(0, 0, 0, 0.6);
+  box-shadow: -24px -24px 70px rgba(255, 255, 255, 0.012), 54px 54px 120px rgba(0, 0, 0, 0.72);
   transform: rotateY(-15deg) rotateX(5deg) translateZ(-100px);
   transform-style: preserve-3d;
   pointer-events: none;
@@ -263,7 +272,7 @@
 
 .splinePath {
   fill: none;
-  stroke: rgba(255, 255, 255, 0.16);
+  stroke: rgba(255, 255, 255, 0.12);
   stroke-width: 1.5;
   stroke-dasharray: 6 6;
   animation: flow 20s linear infinite;
@@ -271,7 +280,7 @@
 
 .splineGlow {
   fill: none;
-  stroke: rgba(255, 255, 255, 0.06);
+  stroke: rgba(95, 134, 255, 0.065);
   stroke-width: 9;
   filter: blur(5px);
 }
@@ -284,13 +293,13 @@
 
 .node {
   position: absolute;
-  background: rgba(255, 255, 255, 0.028);
+  background: rgba(255, 255, 255, 0.018);
   backdrop-filter: blur(18px) saturate(160%);
   -webkit-backdrop-filter: blur(18px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-card);
-  box-shadow: var(--shadow-ambient), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow-ambient), inset 0 1px 0 rgba(255, 255, 255, 0.08);
   display: flex;
   flex-direction: column;
   z-index: 2;

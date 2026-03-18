@@ -15,7 +15,7 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.textSection}>
           <h1 className={styles.h1}>dhandaHQ</h1>
-          <p className={styles.subhead}>Command center for your business.</p>
+          <p className={styles.subhead}>The command center for your business.</p>
 
           <div className={styles.ctaGroup}>
             <button className={styles.btnPrimary} aria-label="Start">
