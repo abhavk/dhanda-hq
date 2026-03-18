@@ -67,7 +67,7 @@ export default function Home() {
                 <div className={styles.avatar} />
                 <div style={{ flex: 1 }}>
                   <div className={styles.nodeHeading}>Pricing & Margin</div>
-                  <div className={styles.nodeSubheading}>Protect gross margin before chasing volume.</div>
+                  <div className={styles.nodeSubheading}>Price moves, discounting, and contribution margin.</div>
                 </div>
               </div>
               <div className={styles.nodeKpiRow}>
@@ -88,7 +88,7 @@ export default function Home() {
                 <div className={styles.avatar} />
                 <div style={{ flex: 1 }}>
                   <div className={styles.nodeHeading}>Receivables</div>
-                  <div className={styles.nodeSubheading}>Tighten collections. Reduce bad debt quietly.</div>
+                  <div className={styles.nodeSubheading}>Invoices, payment timing, and customer risk.</div>
                 </div>
               </div>
               <div className={styles.nodeKpiRow}>
@@ -109,7 +109,7 @@ export default function Home() {
                 <div className={styles.avatar} />
                 <div style={{ flex: 1 }}>
                   <div className={styles.nodeHeading}>Inventory</div>
-                  <div className={styles.nodeSubheading}>Cut dead stock. Buy only what turns.</div>
+                  <div className={styles.nodeSubheading}>Stock levels, aging, and replenishment signals.</div>
                 </div>
               </div>
               <div className={styles.nodeKpiRow}>
@@ -125,15 +125,6 @@ export default function Home() {
               <div className={`${styles.metaLabel} ${styles.lbl1}`}>CAPITAL EFFICIENCY</div>
             </div>
 
-            <div className={styles.nodeInsight}>
-              <div className={`${styles.metaLabel} ${styles.lbl2}`}>CORE_NODE</div>
-              <div className={styles.insightCore}>
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  <path d="M9 12l2 2 4-4" />
-                </svg>
-              </div>
-            </div>
           </div>
         </section>
       </main>

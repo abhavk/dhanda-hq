@@ -553,3 +553,50 @@
     transform: none;
   }
 }
+
+@media (max-width: 640px) {
+  .nav {
+    width: calc(100% - 32px);
+    left: 16px;
+    right: 16px;
+    transform: none;
+    justify-content: space-between;
+  }
+
+  .navLinks {
+    gap: 16px;
+  }
+
+  .main {
+    padding: 90px 20px 40px;
+    gap: 36px;
+  }
+
+  .canvasSection {
+    height: 680px;
+  }
+
+  .spatialBackdrop {
+    inset: 16px;
+    border-radius: 28px;
+  }
+
+  .cardVideo {
+    width: min(320px, calc(100vw - 72px));
+    height: auto;
+  }
+
+  .node {
+    position: absolute;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    animation: none;
+  }
+
+  .node1 { top: 40px; }
+  .node3 { top: 220px; }
+  .node2 { top: 400px; }
+  .node4 { top: 580px; }
+}
+
