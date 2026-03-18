@@ -6,24 +6,21 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <nav className={styles.nav}>
-        <div className={styles.logo}>dhandaHQ</div>
         <div className={styles.navLinks}>
           <a href="#">Platform</a>
-          <a href="#">Use Cases</a>
           <a href="#">Pricing</a>
         </div>
       </nav>
 
       <main className={styles.main}>
         <section className={styles.textSection}>
-          <div className={styles.badge}>COMMAND CENTER_</div>
           <h1 className={styles.h1}>dhandaHQ</h1>
           <p className={styles.subhead}>Command center for your business.</p>
 
           <div className={styles.ctaGroup}>
             <button className={styles.btnPrimary} aria-label="Start">
               <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 4v16m0-16l-4 4m4-4l4 4" />
+                <path d="M5 12h14m0 0l-6-6m6 6l-6 6" />
               </svg>
             </button>
             <span className={styles.ctaText}>Get Started</span>

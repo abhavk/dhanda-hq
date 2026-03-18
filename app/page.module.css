@@ -137,6 +137,9 @@
   letter-spacing: -0.05em;
   margin-bottom: 22px;
   color: var(--text-primary);
+  font-style: italic;
+  transform: skewX(-12deg);
+  display: inline-block;
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.44) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
