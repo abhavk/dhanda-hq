@@ -18,12 +18,12 @@ export default function Home() {
           <p className={styles.subhead}>The command center for your business.</p>
 
           <div className={styles.ctaGroup}>
-            <button className={styles.btnPrimary} aria-label="Start">
+            <button className={styles.btnPrimary} aria-label="Get Started">
+              <span className={styles.btnLabel}>Get Started</span>
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M5 12h14m0 0l-6-6m6 6l-6 6" />
               </svg>
             </button>
-            <span className={styles.ctaText}>Get Started</span>
           </div>
         </section>
 
