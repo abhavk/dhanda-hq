@@ -45,48 +45,84 @@ export default function Home() {
               <div className={styles.cardVideoHeader}>
                 <div className={styles.avatar} />
                 <div style={{ flex: 1 }}>
-                  <div className={styles.cardTitle} />
-                  <div className={styles.cardMeta} />
+                  <div className={styles.nodeHeading}>Owner’s Dashboard</div>
+                  <div className={styles.nodeSubheading}>Cash, runway, and working capital — at a glance.</div>
                 </div>
               </div>
-              <div className={styles.playIndicator} />
-              <div className={`${styles.metaLabel} ${styles.lbl1}`}>NODE_01</div>
+              <div className={styles.nodeKpiRow}>
+                <div className={styles.nodeKpi}>
+                  <div className={styles.nodeKpiLabel}>Free cash flow</div>
+                  <div className={styles.nodeKpiValue}>+₹3.4L</div>
+                </div>
+                <div className={styles.nodeKpi}>
+                  <div className={styles.nodeKpiLabel}>Runway</div>
+                  <div className={styles.nodeKpiValue}>7.8 mo</div>
+                </div>
+              </div>
+              <div className={`${styles.metaLabel} ${styles.lbl1}`}>DISCIPLINE</div>
             </div>
 
             <div className={`${styles.node} ${styles.cardVideo} ${styles.node2}`} style={{ ['--tz' as any]: '12px' }}>
               <div className={styles.cardVideoHeader}>
                 <div className={styles.avatar} />
                 <div style={{ flex: 1 }}>
-                  <div className={styles.cardTitle} />
-                  <div className={styles.cardMeta} />
+                  <div className={styles.nodeHeading}>Pricing & Margin</div>
+                  <div className={styles.nodeSubheading}>Protect gross margin before chasing volume.</div>
                 </div>
               </div>
-              <div className={styles.playIndicator} />
-              <div className={`${styles.metaLabel} ${styles.lbl1}`}>NODE_02</div>
+              <div className={styles.nodeKpiRow}>
+                <div className={styles.nodeKpi}>
+                  <div className={styles.nodeKpiLabel}>Gross margin</div>
+                  <div className={styles.nodeKpiValue}>41.2%</div>
+                </div>
+                <div className={styles.nodeKpi}>
+                  <div className={styles.nodeKpiLabel}>Price moves</div>
+                  <div className={styles.nodeKpiValue}>+2</div>
+                </div>
+              </div>
+              <div className={`${styles.metaLabel} ${styles.lbl1}`}>UNIT ECONOMICS</div>
             </div>
 
             <div className={`${styles.node} ${styles.cardVideo} ${styles.node3}`} style={{ ['--tz' as any]: '44px' }}>
               <div className={styles.cardVideoHeader}>
                 <div className={styles.avatar} />
                 <div style={{ flex: 1 }}>
-                  <div className={styles.cardTitle} />
-                  <div className={styles.cardMeta} />
+                  <div className={styles.nodeHeading}>Receivables</div>
+                  <div className={styles.nodeSubheading}>Tighten collections. Reduce bad debt quietly.</div>
                 </div>
               </div>
-              <div className={styles.playIndicator} />
-              <div className={`${styles.metaLabel} ${styles.lbl1}`}>NODE_03</div>
+              <div className={styles.nodeKpiRow}>
+                <div className={styles.nodeKpi}>
+                  <div className={styles.nodeKpiLabel}>DSO</div>
+                  <div className={styles.nodeKpiValue}>23 d</div>
+                </div>
+                <div className={styles.nodeKpi}>
+                  <div className={styles.nodeKpiLabel}>At risk</div>
+                  <div className={styles.nodeKpiValue}>₹68k</div>
+                </div>
+              </div>
+              <div className={`${styles.metaLabel} ${styles.lbl1}`}>CASH CONVERSION</div>
             </div>
 
             <div className={`${styles.node} ${styles.cardVideo} ${styles.node4}`} style={{ ['--tz' as any]: '22px' }}>
               <div className={styles.cardVideoHeader}>
                 <div className={styles.avatar} />
                 <div style={{ flex: 1 }}>
-                  <div className={styles.cardTitle} />
-                  <div className={styles.cardMeta} />
+                  <div className={styles.nodeHeading}>Inventory</div>
+                  <div className={styles.nodeSubheading}>Cut dead stock. Buy only what turns.</div>
                 </div>
               </div>
-              <div className={styles.playIndicator} />
-              <div className={`${styles.metaLabel} ${styles.lbl1}`}>NODE_04</div>
+              <div className={styles.nodeKpiRow}>
+                <div className={styles.nodeKpi}>
+                  <div className={styles.nodeKpiLabel}>Turns</div>
+                  <div className={styles.nodeKpiValue}>9.1x</div>
+                </div>
+                <div className={styles.nodeKpi}>
+                  <div className={styles.nodeKpiLabel}>Aging</div>
+                  <div className={styles.nodeKpiValue}>12%</div>
+                </div>
+              </div>
+              <div className={`${styles.metaLabel} ${styles.lbl1}`}>CAPITAL EFFICIENCY</div>
             </div>
 
             <div className={styles.nodeInsight}>
