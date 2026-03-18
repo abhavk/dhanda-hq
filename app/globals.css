@@ -13,6 +13,8 @@ body {
   min-height: 100%;
   height: auto;
   overscroll-behavior-y: auto;
+  /* Ensure vertical scrolling is never gated by touch-action quirks */
+  touch-action: auto;
 }
 
 body {
@@ -21,7 +23,9 @@ body {
   font-feature-settings: "ss01" 1, "ss02" 1, "cv11" 1;
   overflow-x: hidden;
   background: #07080b;
-  touch-action: pan-y;
+  /* Prevent iOS scroll jank where an overlay/transform layer “captures” the first swipe */
+  -webkit-overflow-scrolling: touch;
+  touch-action: auto;
 }
 
 a {

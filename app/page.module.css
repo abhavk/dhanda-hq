@@ -285,6 +285,14 @@
   transform: translateZ(0);
 }
 
+/* This layer is purely decorative; make sure it never interferes with scrolling/gestures */
+.splines,
+.splinePath,
+.splineGlow {
+  pointer-events: none;
+  touch-action: none;
+}
+
 .splinePath {
   fill: none;
   stroke: rgba(255, 255, 255, 0.12);
