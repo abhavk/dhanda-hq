@@ -556,11 +556,13 @@
 
 @media (max-width: 640px) {
   .nav {
-    width: calc(100% - 32px);
-    left: 16px;
-    right: 16px;
-    transform: none;
-    justify-content: space-between;
+    /* Keep the pill centered on mobile instead of stretching full-width */
+    width: fit-content;
+    max-width: calc(100% - 32px);
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    justify-content: center;
   }
 
   .navLinks {
