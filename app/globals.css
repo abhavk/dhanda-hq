@@ -12,7 +12,7 @@ body {
   width: 100%;
   min-height: 100%;
   height: auto;
-  overscroll-behavior-y: none;
+  overscroll-behavior-y: auto;
 }
 
 body {
@@ -22,7 +22,6 @@ body {
   overflow-x: hidden;
   background: #07080b;
   touch-action: pan-y;
-  -webkit-overflow-scrolling: touch;
 }
 
 a {
