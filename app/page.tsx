@@ -46,7 +46,7 @@ export default function Home() {
                 <div className={styles.avatar} />
                 <div style={{ flex: 1 }}>
                   <div className={styles.nodeHeading}>Owner’s Dashboard</div>
-                  <div className={styles.nodeSubheading}>Cash, runway, and working capital — at a glance.</div>
+                  <div className={styles.nodeSubheading}>Cash, runway, and working capital.</div>
                 </div>
               </div>
               <div className={styles.nodeKpiRow}>
