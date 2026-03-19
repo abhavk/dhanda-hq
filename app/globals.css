@@ -12,7 +12,7 @@ body {
   width: 100%;
   min-height: 100%;
   height: auto;
-  overscroll-behavior-y: none;
+  overscroll-behavior-y: auto;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   font-feature-settings: "ss01" 1, "ss02" 1, "cv11" 1;
   overflow-x: hidden;
   background: #07080b;
-  touch-action: pan-y;
+  touch-action: auto;
   -webkit-overflow-scrolling: touch;
 }
 
