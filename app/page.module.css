@@ -28,10 +28,10 @@
 }
 
 .page {
-  height: 100vh;
-  height: 100svh;
-  height: 100dvh;
-  overflow: hidden;
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 
@@ -111,7 +111,7 @@
   width: 100%;
   padding: 120px 80px 32px;
   gap: 80px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .textSection {
