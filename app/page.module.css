@@ -461,6 +461,41 @@
   animation: float 9s ease-in-out infinite 0.5s;
 }
 
+
+@media (max-width: 1180px) and (min-width: 641px) {
+  .spatialScene {
+    width: min(100%, 760px);
+    height: 760px;
+    margin: 0 auto;
+  }
+
+  .cardVideo {
+    width: 188px;
+    min-height: 170px;
+    height: auto;
+  }
+
+  .node1 {
+    top: 8%;
+    left: 8%;
+  }
+
+  .node2 {
+    top: 62%;
+    left: 8%;
+  }
+
+  .node3 {
+    top: 12%;
+    right: 8%;
+  }
+
+  .node4 {
+    top: 66%;
+    right: 8%;
+  }
+}
+
 @keyframes float {
   0%,
   100% {
