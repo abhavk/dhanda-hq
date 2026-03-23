@@ -434,29 +434,29 @@
 }
 
 .node1 {
-  top: 10%;
-  left: 10%;
+  top: 8%;
+  left: 8%;
   transform: translateZ(20px);
   animation: float 6s ease-in-out infinite;
 }
 
 .node2 {
-  top: 60%;
-  left: 5%;
+  top: 58%;
+  left: 0;
   transform: translateZ(40px);
   animation: float 8s ease-in-out infinite 1s;
 }
 
 .node3 {
-  top: 15%;
-  right: 15%;
+  top: 12%;
+  right: 6%;
   transform: translateZ(30px);
   animation: float 7s ease-in-out infinite 2s;
 }
 
 .node4 {
-  top: 70%;
-  right: 10%;
+  top: 62%;
+  right: 2%;
   transform: translateZ(10px);
   animation: float 9s ease-in-out infinite 0.5s;
 }
