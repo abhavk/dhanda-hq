@@ -1,17 +1,8 @@
-'use client';
-
 import styles from './page.module.css';
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <nav className={styles.nav}>
-        <div className={styles.navLinks}>
-          <a href="#">Tools</a>
-          <a href="#">Pricing</a>
-        </div>
-      </nav>
-
       <main className={styles.main}>
         <section className={styles.textSection}>
           <h1 className={styles.h1}>dhandaHQ</h1>
@@ -124,7 +115,6 @@ export default function Home() {
               </div>
               <div className={`${styles.metaLabel} ${styles.lbl1}`}>CAPITAL EFFICIENCY</div>
             </div>
-
           </div>
         </section>
       </main>
