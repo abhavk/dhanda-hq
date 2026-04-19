@@ -155,7 +155,6 @@ export default function Home() {
             <div className={styles.servicesSection}>
               <div className={styles.servicesInner}>
                 <div className={styles.servicePanel}>
-                  <div className={styles.serviceEyebrow}>Services</div>
                   <div className={styles.serviceShell}>
                     <div className={styles.serviceGlow} />
                     <div className={styles.serviceCard}>
