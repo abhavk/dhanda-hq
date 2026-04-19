@@ -11,8 +11,19 @@ html,
 body {
   width: 100%;
   min-height: 100%;
+  height: auto;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: auto;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
 }
 
 body {
