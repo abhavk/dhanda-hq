@@ -249,6 +249,12 @@
   min-height: 680px;
 }
 
+.servicesCanvas {
+  align-items: flex-start;
+  min-height: auto;
+  perspective: none;
+}
+
 .spatialBackdrop {
   position: absolute;
   inset: 40px -40px -40px 40px;
