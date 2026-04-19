@@ -36,17 +36,19 @@ export default function Home() {
           <p className={styles.subhead}>The command center for your business.</p>
 
           <div className={styles.ctaGroup}>
-            <button
-              type="button"
-              className={styles.btnPrimary}
-              onClick={() => setActiveTab('services')}
-              aria-label="View Services"
-            >
-              <span className={styles.btnLabel}>View Services</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 12h14m0 0l-6-6m6 6l-6 6" />
-              </svg>
-            </button>
+            {isHome ? (
+              <button
+                type="button"
+                className={styles.btnPrimary}
+                onClick={() => setActiveTab('services')}
+                aria-label="View Services"
+              >
+                <span className={styles.btnLabel}>View Services</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14m0 0l-6-6m6 6l-6 6" />
+                </svg>
+              </button>
+            ) : null}
           </div>
         </section>
 
