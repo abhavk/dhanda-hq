@@ -9,10 +9,8 @@ type GeoSeoProfile = {
   websiteReadiness: string;
   topSignals: string[];
   recommendedActions: string[];
-  address: string;
 };
 
-const ADDRESS = 'Imminent Singularities, 3F-008, T-Hub, Hyderabad';
 
 function buildStubProfile(companyName: string): GeoSeoProfile {
   const normalized = companyName.trim();
@@ -31,14 +29,12 @@ function buildStubProfile(companyName: string): GeoSeoProfile {
     topSignals: [
       `${normalized} is discoverable for branded search queries in this stubbed model.`,
       hasLongName ? 'Longer brand phrasing may benefit from tighter keyword variants.' : 'Brand naming is compact enough for strong local query matching.',
-      `Primary operating address anchored to ${ADDRESS}.`,
     ],
     recommendedActions: [
-      'Standardize business name, address, and phone details across all listings.',
+      'Standardize business details across all listings and owned properties.',
       'Publish location-aware landing pages with stronger category and service intent.',
       'Improve review capture, schema markup, and internal linking for local search coverage.',
     ],
-    address: ADDRESS,
   };
 }
 

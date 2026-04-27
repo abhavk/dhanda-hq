@@ -14,7 +14,6 @@ type GeoSeoProfile = {
   websiteReadiness: string;
   topSignals: string[];
   recommendedActions: string[];
-  address: string;
 };
 
 export default function Home() {
@@ -347,7 +346,6 @@ export default function Home() {
                             <p className={styles.profileEyebrow}>Latest profile</p>
                             <h3 className={styles.profileCompany}>{profile.companyName}</h3>
                           </div>
-                          <div className={styles.profileAddress}>{profile.address}</div>
                         </div>
 
                         <p className={styles.profileSummary}>{profile.summary}</p>
@@ -408,13 +406,6 @@ export default function Home() {
       </main>
 
 
-      <footer className={styles.addressFooter}>
-        <p className={styles.addressFooterText}>
-          Imminent Singularities,
-          <br />
-          3F-008, T-Hub, Hyderabad
-        </p>
-      </footer>
     </div>
   );
 }
