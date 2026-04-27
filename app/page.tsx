@@ -144,10 +144,6 @@ export default function Home() {
             )}
           </div>
 
-          <div className={styles.addressCard}>
-            <span className={styles.addressLabel}>Address</span>
-            <span className={styles.addressValue}>3F-008, T-Hub, Hyderabad</span>
-          </div>
         </section>
 
         <section className={`${styles.canvasSection} ${!isHome ? styles.servicesCanvas : ''}`}>
@@ -411,6 +407,15 @@ export default function Home() {
           )}
         </section>
       </main>
+
+
+      <footer className={styles.addressFooter}>
+        <p className={styles.addressFooterText}>
+          Imminent Singularities,
+          <br />
+          3F-008, T-Hub, Hyderabad
+        </p>
+      </footer>
     </div>
   );
 }

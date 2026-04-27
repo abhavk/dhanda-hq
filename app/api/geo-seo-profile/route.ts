@@ -12,7 +12,7 @@ type GeoSeoProfile = {
   address: string;
 };
 
-const ADDRESS = '3F-008, T-Hub, Hyderabad';
+const ADDRESS = 'Imminent Singularities, 3F-008, T-Hub, Hyderabad';
 
 function buildStubProfile(companyName: string): GeoSeoProfile {
   const normalized = companyName.trim();
