@@ -99,7 +99,6 @@ export default function Home() {
 
       <main className={styles.main}>
         <section className={styles.textSection}>
-          <div className={styles.badge}>{isHome ? 'Operator intelligence for growing businesses' : isServices ? 'Premier deployment for WhatsApp agents' : 'Instant GEO / SEO company profiling'}</div>
           <h1 className={styles.h1}>dhandaHQ</h1>
           <p className={styles.subhead}>
             {isHome
