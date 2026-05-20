@@ -3,7 +3,7 @@
 import { FormEvent, useState } from 'react';
 import styles from './page.module.css';
 
-type TabKey = 'home' | 'services' | 'tools';
+type TabKey = 'home' | 'services' | 'tools' | 'support';
 
 type GeoSeoProfile = {
   companyName: string;
@@ -27,6 +27,7 @@ export default function Home() {
   const isHome = activeTab === 'home';
   const isServices = activeTab === 'services';
   const isTools = activeTab === 'tools';
+  const isSupport = activeTab === 'support';
 
   const handleProfileLookup = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -94,6 +95,14 @@ export default function Home() {
           >
             Tools
           </button>
+          <button
+            type="button"
+            className={`${styles.navLink} ${isSupport ? styles.navLinkActive : ''}`}
+            onClick={() => setActiveTab('support')}
+            aria-pressed={isSupport}
+          >
+            Support
+          </button>
         </div>
       </nav>
 
@@ -105,7 +114,9 @@ export default function Home() {
               ? 'The command center for your business.'
               : isServices
                 ? 'We design and install high-touch WhatsApp agents for modern businesses, with concierge deployment and handover.'
-                : 'Type your company name and generate a stubbed GEO/SEO profile through an API-powered workflow that is ready for a live integration later.'}
+                : isTools
+                  ? 'Type your company name and generate a stubbed GEO/SEO profile through an API-powered workflow that is ready for a live integration later.'
+                  : 'Reach out directly for support, setup help, or any questions about deployments and tools.'}
           </p>
 
           <div className={styles.ctaGroup}>
@@ -300,7 +311,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          ) : (
+          ) : isTools ? (
             <div className={styles.toolsSection}>
               <div className={styles.toolsShell}>
                 <div className={styles.toolsGlow} />
@@ -399,6 +410,51 @@ export default function Home() {
                         </p>
                       </div>
                     )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className={styles.supportSection}>
+              <div className={styles.supportShell}>
+                <div className={styles.supportGlow} />
+                <div className={styles.supportCard}>
+                  <div className={styles.supportHeader}>
+                    <div>
+                      <p className={styles.supportKicker}>Direct contact</p>
+                      <h2 className={styles.supportTitle}>Support</h2>
+                    </div>
+                    <div className={styles.serviceBadge}>Available on WhatsApp</div>
+                  </div>
+
+                  <p className={styles.supportDescription}>
+                    For support, deployment help, or general questions, reach out directly using any of the contact options below.
+                  </p>
+
+                  <div className={styles.supportGrid}>
+                    <div className={styles.supportItem}>
+                      <span className={styles.supportLabel}>Contact number</span>
+                      <a className={styles.supportLink} href="tel:+917799022048">
+                        +91 7799022048
+                      </a>
+                    </div>
+                    <div className={styles.supportItem}>
+                      <span className={styles.supportLabel}>WhatsApp</span>
+                      <a
+                        className={styles.supportLink}
+                        href="https://wa.me/917799022048?text=Hi%2C%20I%20need%20support."
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Chat on WhatsApp
+                      </a>
+                    </div>
+                    <div className={styles.supportItem}>
+                      <span className={styles.supportLabel}>Email</span>
+                      <a className={styles.supportLink} href="mailto:Abhavkedia@gmail.com">
+                        Abhavkedia@gmail.com
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
